@@ -6,8 +6,7 @@ function App() {
 
   const [value, setValue] = useState ('');
 
-
-  const [chores, setChores] = useState ([{ title: '' }]);
+  const [chores , setChores] = useState () ;
 
   const handleSubmit = e => {
       e.preventDefault();
@@ -28,7 +27,7 @@ function App() {
       <header className="Top-Bar">
         <ul>
           <li className="Title-Button"> TodoApp </li>
-          <li className="Home-Button"> Home </li>
+          <li className="Home-Bheir futton"> Home </li>
           <div className="Logistics-Block"> 
           <li className="Login-Button"> Login </li>
           <li className="Language-Button"> English </li>
@@ -44,10 +43,7 @@ function App() {
         <div className="Submission-Block">
           <input onChange={e => setValue(e.target.value)} type="text" id="ToDoListItem" name="item" placeholder="enter text..."></input>
           <button type="button" className="Submit-Button"> Submit </button>
-          {chores.map((chore, index) => (
-                            chore={chore} ,
-                            index={index}
-                        ))}
+          <div> {chores.title} </div>
         </div>
 
 
