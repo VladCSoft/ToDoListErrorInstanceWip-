@@ -1,38 +1,131 @@
-.App {
-  text-align: center;
+.App{
+  background-color: #f8f9fb;
+  height: 973px;
+  
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.Top-Bar {
+    padding: 26px;
+    margin: -8px;
+    top: 0;
+    overflow:hidden;
+    max-width: auto;
+    position: relative; 
+    background-color: #353a40 ;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.Title-Button{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #FFFFFF;
+    font-size: 30px;
+    position: sticky;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.Home-Button{
+    color: #9ea3a6;
+    font-family: Arial, Helvetica, sans-serif;
+    position: -webkit-sticky;
+    position: sticky;
+    padding-left: 335px;
+    padding-top : 8px;
+    left: 650px;
+    font-size:18px; 
+    text-align: center; 
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.Logistics-Block{
+  display:flex;
+  position: sticky;
+  overflow:hidden;
+  justify-content: space-around;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.Login-Button{
+  font-family: Arial, Helvetica, sans-serif;
+  color: #9ea3a6;
+  margin-left: 1360px;
+  margin-top: 10px;
+  position: sticky; 
+  
+}
+
+.Language-Button{
+  font-family: Arial, Helvetica, sans-serif;
+  color: #9ea3a6;
+  padding-left: 10px;
+  padding-top: 10px;
+  position: -webkit-sticky;
+  position: sticky;
+}
+
+.Down-Arrow{
+  padding-left:10px;
+  padding-top: 15px;
+  position:sticky;
+}
+
+.ToDoList-Block{
+  color: #f7f7f7; 
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  box-sizing: border-box;
+  background-color: #f7f7f7;
+  border: 1px solid #e3e3e3;
+  padding:20px;
+  position:relative;
+  margin: 60px 40px;
+}
+
+.ToDoList-Text{
+  font-family: Arial, Helvetica, sans-serif;
+  color: #000;
+  font-weight: normal;
+  left: 15px;
+  font-size: 35px;
+  padding: 0;
+  margin:0;
+}
+
+.Submission-Block{
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+  box-sizing: border-box;
+  background-color: #FFFFFF;
+  border: 1px solid #e3e3e3;
+  padding:300px;
+  position:relative;
+  margin: -61px 40px;
+}
+
+#ToDoListItem{
+  padding: 15px;
+  border-radius: 4px;
+  border: 1px solid #e3e3e3;
+  position: absolute;
+  margin: -270px -270px;
+  width: 320px;
+  box-sizing:border-box;
+}
+
+.Submit-Button{
+  padding: 15px;
+  background-color: #0279fd;
+  color: #FFFFFF;
+  font-size: 20px;
+  margin: -270px 70px;
+  border-radius: 4px;
+  border: 1px solid #e3e3e3;
+  width: 115px;
+  position: absolute;
+}
+
+input{
+  font-size: 20px;
 }
