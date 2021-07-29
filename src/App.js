@@ -54,6 +54,7 @@ function App() {
                         key={index}
                         id={index}
                         chore={chore}
+                        onCheck={removeChore}
                     />
                 ))}
          </ul>
