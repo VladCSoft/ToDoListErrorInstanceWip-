@@ -6,7 +6,7 @@ function App() {
 
   const [value, setValue] = useState ('');
 
-  const [chores , setChores] = useState () ;
+  const [chores , setChores] = useState ({ title: '' }) ;
 
   const handleSubmit = e => {
       e.preventDefault();
@@ -27,7 +27,7 @@ function App() {
       <header className="Top-Bar">
         <ul>
           <li className="Title-Button"> TodoApp </li>
-          <li className="Home-Bheir futton"> Home </li>
+          <li className="Home-Button"> Home </li>
           <div className="Logistics-Block"> 
           <li className="Login-Button"> Login </li>
           <li className="Language-Button"> English </li>
