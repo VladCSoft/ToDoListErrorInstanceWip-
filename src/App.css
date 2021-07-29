@@ -26,7 +26,7 @@
     font-family: Arial, Helvetica, sans-serif;
     position: -webkit-sticky;
     position: sticky;
-    padding-left: 335px;
+    padding-left: 233px;
     padding-top : 8px;
     left: 650px;
     font-size:18px; 
@@ -50,7 +50,7 @@ ul {
 .Login-Button{
   font-family: Arial, Helvetica, sans-serif;
   color: #9ea3a6;
-  margin-left: 1360px;
+  margin-left: 1280px;
   margin-top: 10px;
   position: sticky; 
   
@@ -128,4 +128,19 @@ ul {
 
 input{
   font-size: 20px;
+}
+
+.chores {
+  margin: -490px 73px;
+  z-index:1;
+}
+
+.chores ul li { 
+  border: 1px solid #cdcdcd;
+  background-color: #f5f5f5;
+  padding: 10px 1660px 10px 10px;
+  font-size: 25px;
+  font-weight: 300;
+  color: #494a4b;
+  z-index:1;
 }

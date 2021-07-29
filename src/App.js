@@ -1,25 +1,28 @@
 import React, { useState } from 'react';
-import logo from './logo.svg';
+import TodoChore from "./chores.js";
 import './App.css'; 
 
 function App() {
 
-  const [value, setValue] = useState ('');
+  const [input , setInput] = useState("");
+  const [chores, setChores] = useState([]);
 
-  const [chores , setChores] = useState ({ title: '' }) ;
+  function addChore(event) {
+    setChores(prevData => {
+      return [...prevData , input];
+    });
 
-  const handleSubmit = e => {
-      e.preventDefault();
-      if (!value) return;
-      
-      addChore(value);
-      setValue("");
+    setInput ("");
   }
 
-  const addChore = title => {
-    const newChores = [...chores , title];
-    setChores(newChores);
+  function removeChore(id) {
+    setChores(prevData => {
+      return prevData.filter((item,index) => {
+        return index !== id;
+      })
+    });
   }
+    
 
   return (
     <div className="App">
@@ -39,12 +42,23 @@ function App() {
       <body>
         <div className="ToDoList-Block">
           <h class="ToDoList-Text"> TODO LIST </h>
-        </div>
-        <div className="Submission-Block">
-          <input onChange={e => setValue(e.target.value)} type="text" id="ToDoListItem" name="item" placeholder="enter text..."></input>
-          <button type="button" className="Submit-Button"> Submit </button>
-          <div> {chores.title} </div>
-        </div>
+        </div> 
+        <form className="Submission-Block">
+          <input onChange={(event) => {setInput(event.target.value)}} type="text" id="ToDoListItem" name="item" placeholder="enter text..."></input>
+          <button type="button" className="Submit-Button" onClick={addChore}> Submit </button>
+        </form>
+        <div className="chores">
+          <ul>
+                {chores.map((chore, index) => (
+                    <TodoChore
+                        key={index}
+                        id={index}
+                        chore={chore}
+                    />
+                ))}
+         </ul>
+
+         </div>
 
 
       </body>
