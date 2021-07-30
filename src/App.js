@@ -44,11 +44,10 @@ function App() {
           <h class="ToDoList-Text"> TODO LIST </h>
         </div> 
         <form className="Submission-Block">
-          <input onChange={(event) => {setInput(event.target.value)}} type="text" id="ToDoListItem" name="item" placeholder="enter text..."></input>
+          <input value={input} onChange={(event) => {setInput(event.target.value)}} type="text" id="ToDoListItem" name="item" placeholder="enter text..."></input>
           <button type="button" className="Submit-Button" onClick={addChore}> Submit </button>
         </form>
         <div className="chores">
-          <ul>
                 {chores.map((chore, index) => (
                     <TodoChore
                         key={index}
@@ -57,8 +56,6 @@ function App() {
                         onCheck={removeChore}
                     />
                 ))}
-         </ul>
-
          </div>
 
 

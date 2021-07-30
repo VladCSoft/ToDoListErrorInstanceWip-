@@ -128,14 +128,18 @@ ul {
 
 input{
   font-size: 20px;
+  display: flex; 
 }
 
 .chores {
   margin: -490px 73px;
   z-index:1;
+  display: flex;
+  position:relative;
 }
 
-.chores ul li { 
+.Chores-Block { 
+  position:relative;
   border: 1px solid #cdcdcd;
   background-color: #f5f5f5;
   padding: 10px 1660px 10px 10px;
@@ -144,3 +148,4 @@ input{
   color: #494a4b;
   z-index:1;
 }
+
