@@ -5,7 +5,6 @@ function TodoChore({ id, chore, onCheck , removeChore}) {
         <div className = "Chores-Block">
             <img src="https://i.imgur.com/ybKIHhG.png" width="16" height="20" onClick={() => {onCheck(id)}}/> 
             {chore}
-            <br></br>   
         </div>
     )
 }

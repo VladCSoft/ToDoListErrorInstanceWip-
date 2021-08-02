@@ -1,12 +1,12 @@
 .App{
   background-color: #f8f9fb;
-  height: 973px;
+  height: 50px;
   
 }
 
 .Top-Bar {
-    padding: 26px;
-    margin: -8px;
+    padding: 15px;
+    margin: 0px;
     top: 0;
     overflow:hidden;
     max-width: auto;
@@ -31,6 +31,7 @@
     left: 650px;
     font-size:18px; 
     text-align: center; 
+    text-decoration: none;
 }
 
 ul {
@@ -52,7 +53,8 @@ ul {
   color: #9ea3a6;
   margin-left: 1280px;
   margin-top: 10px;
-  position: sticky; 
+  position: sticky;
+  text-decoration: none; 
   
 }
 
@@ -134,18 +136,88 @@ input{
 .chores {
   margin: -490px 73px;
   z-index:1;
-  display: flex;
   position:relative;
 }
 
 .Chores-Block { 
+  
   position:relative;
   border: 1px solid #cdcdcd;
   background-color: #f5f5f5;
-  padding: 10px 1660px 10px 10px;
+  padding: 10px 363px 10px 10px;
   font-size: 25px;
   font-weight: 300;
   color: #494a4b;
   z-index:1;
 }
 
+.Login-Box{
+  background-image: url("https://i.imgur.com/nVF7Zs1.png");
+  background-repeat: no-repeat;
+  border: 1px solid #252d38;
+  width:555px;
+  border-radius: 4px;;
+  height: 500px;
+  margin-left: 635px;
+  margin-top: 75px;
+}
+
+#Login-Email-Box {
+  position: absolute;
+  color: #7e7e80;
+  border: 0px;
+  border-bottom: 1px solid #eaeaea;
+  margin-left: 690px;
+  margin-top : -430px;
+  padding: 12px;
+  width: 442px;
+  z-index: 1;
+}
+
+#Login-Password-Box {
+  position: absolute;
+  border: 0px ; 
+  border-bottom: 1px solid #eaeaea;
+  margin-left: 690px;
+  margin-top: -325px;
+  padding: 12px;
+  width: 442px;
+  z-index:1;
+}
+
+.Login-User-Logo {
+  background-image: url("https://i.imgur.com/LtDFH6j.png");
+  background-size: 25px;
+  padding: 100px;
+  width: 400px;
+  height: 400px;
+  position:absolute;
+  margin-left: 658px;
+  margin-top: -420px;
+  background-repeat: no-repeat;
+}
+
+.Login-Password-Logo{
+  background-image: url("https://i.imgur.com/6tcPdkh.png");
+  background-size: 25px;
+  padding: 100px;
+  width: 400px;
+  height: 400px;
+  position:absolute;
+  margin-left: 658px;
+  margin-top: -317px;
+  background-repeat: no-repeat;
+}
+
+.Login-Sign-In{
+  background-color: #24aeef;
+  border :none;
+  font-size: 22px;
+  color: white;
+  border-radius: 6px;
+  position:absolute; 
+  padding: 25px;
+  width:  512px;
+  margin-left: 658px;
+  margin-top: -240px;
+}

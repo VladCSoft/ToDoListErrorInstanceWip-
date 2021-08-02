@@ -1,67 +1,31 @@
-import React, { useState } from 'react';
-import TodoChore from "./chores.js";
+import React from 'react' ;
+import {Route, BrowserRouter as Router , Switch , Link  } from "react-router-dom"; 
 import './App.css'; 
+import Login from './Pages/Login';
+import Home from './Pages/Home' ;
 
-function App() {
-
-  const [input , setInput] = useState("");
-  const [chores, setChores] = useState([]);
-
-  function addChore(event) {
-    setChores(prevData => {
-      return [...prevData , input];
-    });
-
-    setInput ("");
-  }
-
-  function removeChore(id) {
-    setChores(prevData => {
-      return prevData.filter((item,index) => {
-        return index !== id;
-      })
-    });
-  }
-    
+function App() {    
 
   return (
+    <Router>
     <div className="App">
-      
       <header className="Top-Bar">
         <ul>
           <li className="Title-Button"> TodoApp </li>
-          <li className="Home-Button"> Home </li>
+          <Link to="/" className="Home-Button"> Home </Link>
           <div className="Logistics-Block"> 
-          <li className="Login-Button"> Login </li>
+          <Link to="/login" className="Login-Button"> Login </Link>
           <li className="Language-Button"> English </li>
           <img src="https://i.imgur.com/sC9nZbi.png" height="5" width="10" className="Down-Arrow"></img>
           </div>
         </ul>
       </header>
-      
-      <body>
-        <div className="ToDoList-Block">
-          <h class="ToDoList-Text"> TODO LIST </h>
-        </div> 
-        <form className="Submission-Block">
-          <input value={input} onChange={(event) => {setInput(event.target.value)}} type="text" id="ToDoListItem" name="item" placeholder="enter text..."></input>
-          <button type="button" className="Submit-Button" onClick={addChore}> Submit </button>
-        </form>
-        <div className="chores">
-                {chores.map((chore, index) => (
-                    <TodoChore
-                        key={index}
-                        id={index}
-                        chore={chore}
-                        onCheck={removeChore}
-                    />
-                ))}
-         </div>
-
-
-      </body>
-
     </div>
+    <Switch>
+    <Route path="/" exact component={Home}> <Home /> </Route> 
+    <Route path="/login" exact component={Login} > <Login /> </Route>
+    </Switch>
+    </Router>
   );
 }
 
