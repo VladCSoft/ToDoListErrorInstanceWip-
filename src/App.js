@@ -16,7 +16,7 @@ function App() {
           <div className="Logistics-Block"> 
           <Link to="/login" className="Login-Button"> Login </Link>
           <li className="Language-Button"> English </li>
-          <img src="https://i.imgur.com/sC9nZbi.png" height="5" width="10" className="Down-Arrow"></img>
+          <img src="https://i.imgur.com/sC9nZbi.png" height="5" width="10" alt="Down-Arrow" className="Down-Arrow"></img>
           </div>
         </ul>
       </header>
