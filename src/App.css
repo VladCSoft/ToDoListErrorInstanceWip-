@@ -9,7 +9,7 @@
     margin: 0px;
     top: 0;
     overflow:hidden;
-    max-width: auto;
+    width: 100%;
     position: relative; 
     background-color: #353a40 ;
 }
@@ -155,7 +155,7 @@ input{
   background-image: url("https://i.imgur.com/nVF7Zs1.png");
   background-repeat: no-repeat;
   border: 1px solid #252d38;
-  width:555px;
+  width:29%;
   border-radius: 4px;;
   height: 500px;
   margin-left: 635px;
@@ -167,10 +167,10 @@ input{
   color: #7e7e80;
   border: 0px;
   border-bottom: 1px solid #eaeaea;
-  margin-left: 690px;
+  margin-left: 730px;
   margin-top : -430px;
   padding: 12px;
-  width: 442px;
+  width: 12%;
   z-index: 1;
 }
 
@@ -178,10 +178,10 @@ input{
   position: absolute;
   border: 0px ; 
   border-bottom: 1px solid #eaeaea;
-  margin-left: 690px;
+  margin-left: 730px;
   margin-top: -325px;
   padding: 12px;
-  width: 442px;
+  width: 12%;
   z-index:1;
 }
 
@@ -192,7 +192,7 @@ input{
   width: 400px;
   height: 400px;
   position:absolute;
-  margin-left: 658px;
+  margin-left: 698px;
   margin-top: -420px;
   background-repeat: no-repeat;
 }
@@ -204,7 +204,7 @@ input{
   width: 400px;
   height: 400px;
   position:absolute;
-  margin-left: 658px;
+  margin-left: 698px;
   margin-top: -317px;
   background-repeat: no-repeat;
 }
@@ -217,8 +217,8 @@ input{
   border-radius: 6px;
   position:absolute; 
   padding: 25px;
-  width:  512px;
-  margin-left: 658px;
+  width:  19%;
+  margin-left: 698px;
   margin-top: -240px;
 }
 
@@ -233,7 +233,9 @@ input{
   color: red;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 20px;
-  margin-left: 785px;
+  position: sticky;
+  width:20%;
+  margin-left: 700px;
   margin-top: -120px;
 }
 
@@ -260,4 +262,24 @@ input{
   background-color: #ff9933 ;
   color: white;
   cursor: pointer;
+}
+
+.valid {
+  color: green;
+}
+
+.valid:before {
+  position: relative;
+  left: -35px;
+  content: "✔";
+}
+
+.invalid {
+  color: red;
+}
+
+.invalid:before {
+  position: relative;
+  left: -35px;
+  content: "✖";
 }

@@ -12,8 +12,6 @@ function Login() {
   const [error , setError] = useState ("");
 
   const Login = details => {
-    console.log (details) ;
-
     if (details.email == adminUser.email && details.password == adminUser.password) {
     setUser({
       email: details.email,
@@ -26,8 +24,8 @@ function Login() {
 
   const Logout = () => {
     setUser({ email: "", password: ""}); 
-  } 
-
+  }
+    
   return (
     <div className="Login-Function" >
       {(user.email != "") ? (
